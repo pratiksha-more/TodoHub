@@ -1,13 +1,8 @@
 import React from "react";
 
-const Header = () => {
-    return (
-        <header>
-            <h1>Todo List</h1>
-        </header>
-    );
-};
-
+const Header = (props) => {
+    return <h1 className="todo-header">{props.title}</h1>
+}
 export default Header;
 
 

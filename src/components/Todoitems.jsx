@@ -1,14 +1,16 @@
 import React from "react";
 import "../style.css"
 
-const Todoitems = () => {
+const Todoitems = (props) => {
     return (
         <>
             <li className="todo-item">
                 <span>
-                    <input type="checkbox" />
-                    <span>Eat</span>
+                   {props.completed?<></>: <input type="checkbox" />}
+                    <span className="todo-text">{props.text}</span>
+                    
                 </span>
+                <p>....</p>
 
             </li>
         </>

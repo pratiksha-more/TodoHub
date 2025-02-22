@@ -7,11 +7,14 @@ import Todoitems from "./components/Todoitems.jsx";
 function App() {
   return (
     <>
-      <div className="container">
-        <Header />
-        <Todoitems />
-        <Todoitems />
-        <Todoitems />
+      <div className="todo-container">
+        <Header title="Todoie App" />
+        <Todoitems completed={false} text="Eat" />
+        <Todoitems text="Homework" />
+        <Todoitems text="project" />
+        <Todoitems text="Sleep" />
+        <Todoitems text="Music" />
+
         <Button />
       </div>
     </>
